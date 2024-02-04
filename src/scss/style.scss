@@ -1,0 +1,38 @@
+@import './swiper-bundle.min';
+@import './fonts.scss';
+@import './nulestyle';
+
+
+// ================ Colors ===================
+
+$color1: #061321;
+$color2: #00A3FF;
+$color3: #212121;
+$color4: #F9BF2A;
+
+// =============================================
+
+body{
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	color: $color3;
+}
+
+.wrapper {
+	display: grid;
+	grid-template:  minmax(170px, auto) 1fr minmax(300px, auto) / 1fr;
+	grid-template-areas: 
+	"header"
+	"main"
+	"footer"
+	;
+	min-height: 100%;
+	
+}
+
+// =============== Styles components =================
+
+@import './header';
+@import './main';
+@import './footer';
