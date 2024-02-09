@@ -10,7 +10,8 @@
 		@@include('html/header.html',{})
 		<main class="main">
 			<div class="main__bg">
-				<img class="main__bg-img" src="@img/about.jpg" alt="Bg">
+				<span class="main__bg-img"></span>
+				<!-- <span class="main__bg-img" src="@img/about.jpg" alt="Bg"> -->
 				<section class="main__my-slide">
 				<div class="swiper my-slide">
 					<div class="swiper-wrapper my-slide-wrapper">
@@ -41,8 +42,9 @@
 								Когда мы берёмся за обработку металла пескоструйным 
 								методом, мы используем его в интенсивном потоке чистого песка. 
 								Этот процесс обеспечивает идеальную подготовку поверхности, 
-								удаление дефектов, старую краску и коррозию. Результат - поверхность, 
-								готовая к порошковой покраске.
+								удаление коррозии с металла, очистка поверхности от старой краски и 
+								других загрязнений. Результат - поверхность готова к дальнейшему 
+								нанесению любых типов лакокрасочным материалов.
 							</p>
 						</div>
 					</div>
@@ -60,8 +62,9 @@
 						<div class="card__body">
 							<h3 class="card__title">Очистка металла от коррозии</h3>
 							<p class="card__text">
-								Пескоструйная технология позволяет эффективно избавиться 
-								от коррозии, продлевая срок службы вашего оборудования.
+								Пескоструйная технология обработки поверхности позволяет эффективно избавиться от коррозии, 
+								чего нельзя добиться ручным способом. В дальнейшем можно легко производить ремонтные 
+								работы. После такого метода обработки срок службы изделий значительно продлевается.
 							</p>
 						</div>
 					</div>
@@ -70,10 +73,9 @@
 							<h3 class="card__title">Порошковая покраска</h3>
 							<p class="card__text">
 								Порошковая покраска создает прочное покрытие, 
-								способное выдерживать различные воздействия и сохранять 
-								устойчивость к внешним воздействиям. Вы можете 
-								выбрать из разнообразия оттенков, что позволит придать вашему 
-								оборудованию эстетичный и профессиональный вид.
+								устойчивое к агрессивным средам и жестким условиям эксплуатации.
+								Вы можете выбрать любые цвета из разнообразия оттенков, что позволит 
+								придать вашему изделию эстетичный и профессиональный вид.
 							</p>
 						</div>
 					</div>
@@ -83,12 +85,12 @@
 			<div class="main__price">
 				<section class="price">
 					<h2 class="price__title">Выберете свой план</h2>
-					<p class="price__text">Lorem ipsum dolor sit amet, consectetur
+					<!-- <p class="price__text">Lorem ipsum dolor sit amet, consectetur
 						adipiscing elit, sed do eiusmod tempor incididunt ut labore et
 						dolore magna aliqua. Lorem mollis aliquam ut porttitor leo a diam 
 						sollicitudin tempor. Placerat vestibulum lectus mauris ultrices eros
 						in cursus turpis massa.
-					</p>
+					</p> -->
 					<div class="price__cards">
 						<div class="price-card">
 							<div class="price-card__body">
@@ -97,17 +99,40 @@
 										<div class="type__image">
 											<img src="@img/slide1.jpg" alt="">
 										</div>
-										<p class="type__text">Диски</p>
+										<p class="type__text">Пескоструйная обработка </p>
 									</div>
 								</div>
 								<div class="price-card__included">
 									<div class="included">
-										<div class="included__amount">999<span>₽</span></div>
+										<div class="included__amount"><span>от</span> 850<span>₽ м2</span></div>
 										<ul class="included__list">
-											<li class="included__link">Наименнование услуги</li>
-											<li class="included__link">Наименнование услуги</li>
-											<li class="included__link">Наименнование услуги</li>
-											<li class="included__link">Наименнование услуги</li>
+											<li class="included__link">Пескоструйная обработка</li>
+											<li class="included__link">Очистка металла от старой краски</li>
+											<li class="included__link">Очистка металла от коррозии и других загрязнений.</li>
+											<li class="included__link">Детали любой сложности и размеров</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						<div class="price-card">
+							<div class="price-card__body">
+								<div class="price-card__type">
+									<div class="type">
+										<div class="type__image">
+											<img src="@img/slide1.jpg" alt="">
+										</div>
+										<p class="type__text">Порошковая покраска </p>
+									</div>
+								</div>
+								<div class="price-card__included">
+									<div class="included">
+										<div class="included__amount"><span>от</span> 500<span>₽ м2</span></div>
+										<ul class="included__list">
+											<li class="included__link">Порошковая покраска металлоконструкций</li>
+											<li class="included__link">Порошковая покраска деталей автомобилей</li>
+											<li class="included__link">Порошковая покраска мотоциклов и.т.д.</li>
 										</ul>
 										
 									</div>
@@ -122,67 +147,18 @@
 										<div class="type__image">
 											<img src="@img/slide1.jpg" alt="">
 										</div>
-										<p class="type__text">Кузова</p>
+										<p class="type__text">Порошковая покраска дисков </p>
 									</div>
 								</div>
 								<div class="price-card__included">
 									<div class="included">
-										<div class="included__amount">999<span>₽</span></div>
+										<div class="included__amount"><span>от</span> 1750<span>за шт</span></div>
 										<ul class="included__list">
-											<li class="included__link">Наименнование услуги</li>
-											<li class="included__link">Наименнование услуги</li>
-											<li class="included__link">Наименнование услуги</li>
-											<li class="included__link">Наименнование услуги</li>
-										</ul>
-										
-									</div>
-								</div>
-							</div>
-							
-						</div>
-						<div class="price-card">
-							<div class="price-card__body">
-								<div class="price-card__type">
-									<div class="type">
-										<div class="type__image">
-											<img src="@img/slide1.jpg" alt="">
-										</div>
-										<p class="type__text">Рамы</p>
-									</div>
-								</div>
-								<div class="price-card__included">
-									<div class="included">
-										<div class="included__amount">999<span>₽</span></div>
-										<ul class="included__list">
-											<li class="included__link">Наименнование услуги</li>
-											<li class="included__link">Наименнование услуги</li>
-											<li class="included__link">Наименнование услуги</li>
-											<li class="included__link">Наименнование услуги</li>
-										</ul>
-										
-									</div>
-								</div>
-							</div>
-							
-						</div>
-						<div class="price-card">
-							<div class="price-card__body">
-								<div class="price-card__type">
-									<div class="type">
-										<div class="type__image">
-											<img src="@img/slide1.jpg" alt="">
-										</div>
-										<p class="type__text">Другое</p>
-									</div>
-								</div>
-								<div class="price-card__included">
-									<div class="included">
-										<div class="included__amount">999<span>₽</span></div>
-										<ul class="included__list">
-											<li class="included__link">Наименнование услуги</li>
-											<li class="included__link">Наименнование услуги</li>
-											<li class="included__link">Наименнование услуги</li>
-											<li class="included__link">Наименнование услуги</li>
+											<li class="included__link">Подготовка к покраске</li>
+											<li class="included__link">Устранение царапин</li>
+											<li class="included__link">Бордюрки где не требуется сварка</li>
+											<li class="included__link">Нанесение порошкового цинко-грунта</li>
+											<li class="included__link">Порошковая покраска</li>
 										</ul>
 										
 									</div>
@@ -196,12 +172,13 @@
 			</div>
 			<div class="main__professionalism">
 				<div class="professionalism">
-					<h2 class="professionalism__title">Путь успеха — профессионализм</h2>
-					<div class="professionalism__text">На пути к успеху мы успешно 
+					<h2 class="professionalism__title">Путь к успеху — профессионализм</h2>
+					<div class="professionalism__text">На пути к успеху мы 
 						реализовали множество проектов, в которых наши услуги пескоструйной 
 						обработки и порошковой покраски превратили обычные металлические 
-						поверхности в произведения искусства. Вот несколько примеров наших 
-						работ до и после:
+						поверхности в произведения искусства. Мы решаем нестандартные задачи и стараемся всегда 
+						достигать желаемого результата. У нас индивидуальный подход к каждой задачи.
+						Примеры наших работ до и после:
 					</div>
 					<div class="professionalism__slide">
 						<div class="swiper slide-prof">
@@ -218,7 +195,7 @@
 										<h4 class="advantages__title">Результат работы</h4>
 										<p class="advantages__text">Металлические детали 
 											автомобиля были покрыты слоями ржавчины и выглядели 
-											старыми.Пескоструйная обработка эффективно 
+											старыми. Пескоструйная обработка эффективно 
 											устранила коррозию
 										</p>
 									</div>

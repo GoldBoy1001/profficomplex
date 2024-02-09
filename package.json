@@ -5,6 +5,7 @@
 	"main": "gulpfile.js",
 	"type": "module",
 	"scripts": {
+		"deployGH": "gh-pages -d dist",
 		"dev": "gulp",
 		"build": "gulp build --build",
 		"zip": "gulp deployZip --build",
@@ -14,6 +15,7 @@
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
+	"homepage": "https://goldboy1001.github.io/profficomplex/",
 	"devDependencies": {
 		"browser-sync": "^2.27.11",
 		"del": "^6.1.1",
@@ -46,6 +48,7 @@
 		"webpack-stream": "^7.0.0"
 	},
 	"dependencies": {
+		"gh-pages": "^6.1.1",
 		"swiper": "^11.0.5"
 	}
 }
