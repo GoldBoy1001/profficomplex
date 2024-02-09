@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css?_v=20240204071445">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240209203443">
 	<title>PROffiComplex</title>
 </head>
 
@@ -14,7 +14,7 @@
 		<header class="header" id="header">
 		<div class="header__top top">
 			<div class="top__body">
-				<a class="top__logo " href="#">PROffi<strong>Complex</strong></a>
+				<a class="top__logo " href="#">PROffI<strong>CompleX</strong></a>
 				<a class="top__location menu__scrol" href="#" data-goto=".map" data-da=".header__banner,992,last">Локация <strong>Тула, Венёвский район, п. Рассвет</strong></a>
 				<a class="top__tel" href="tel:+79105841910" data-da=".header__banner,440,last">Телефон <strong>+7 910 584 19 10</strong></a>
 				<div class="navbar-toggle">
@@ -36,13 +36,14 @@
 			<div class="overlay" id="overlay"></div>
 		</nav>
 		<div class="header__banner">
-			<picture><source srcset="img/banner.webp" type="image/webp"><img src="img/banner.jpg" alt=""></picture>
+			<picture><source srcset="img/banner3.webp" type="image/webp"><img src="img/banner3.jpg" alt=""></picture>
 			<h1 class="header__title">Пескоструйная обработка <br> <strong>порошковая покраска</strong> </h1>
 		</div>
 </header>
 		<main class="main">
 			<div class="main__bg">
-				<picture><source srcset="img/about.webp" type="image/webp"><img class="main__bg-img" src="img/about.jpg" alt="Bg"></picture>
+				<span class="main__bg-img"></span>
+				<!-- <span class="main__bg-img" src="img/about.jpg" alt="Bg"> -->
 				<section class="main__my-slide">
 				<div class="swiper my-slide">
 					<div class="swiper-wrapper my-slide-wrapper">
@@ -73,8 +74,9 @@
 								Когда мы берёмся за обработку металла пескоструйным 
 								методом, мы используем его в интенсивном потоке чистого песка. 
 								Этот процесс обеспечивает идеальную подготовку поверхности, 
-								удаление дефектов, старую краску и коррозию. Результат - поверхность, 
-								готовая к порошковой покраске.
+								удаление коррозии с металла, очистка поверхности от старой краски и 
+								других загрязнений. Результат - поверхность готова к дальнейшему 
+								нанесению любых типов лакокрасочным материалов.
 							</p>
 						</div>
 					</div>
@@ -92,8 +94,9 @@
 						<div class="card__body">
 							<h3 class="card__title">Очистка металла от коррозии</h3>
 							<p class="card__text">
-								Пескоструйная технология позволяет эффективно избавиться 
-								от коррозии, продлевая срок службы вашего оборудования.
+								Пескоструйная технология обработки поверхности позволяет эффективно избавиться от коррозии, 
+								чего нельзя добиться ручным способом. В дальнейшем можно легко производить ремонтные 
+								работы. После такого метода обработки срок службы изделий значительно продлевается.
 							</p>
 						</div>
 					</div>
@@ -102,10 +105,9 @@
 							<h3 class="card__title">Порошковая покраска</h3>
 							<p class="card__text">
 								Порошковая покраска создает прочное покрытие, 
-								способное выдерживать различные воздействия и сохранять 
-								устойчивость к внешним воздействиям. Вы можете 
-								выбрать из разнообразия оттенков, что позволит придать вашему 
-								оборудованию эстетичный и профессиональный вид.
+								устойчивое к агрессивным средам и жестким условиям эксплуатации.
+								Вы можете выбрать любые цвета из разнообразия оттенков, что позволит 
+								придать вашему изделию эстетичный и профессиональный вид.
 							</p>
 						</div>
 					</div>
@@ -115,12 +117,12 @@
 			<div class="main__price">
 				<section class="price">
 					<h2 class="price__title">Выберете свой план</h2>
-					<p class="price__text">Lorem ipsum dolor sit amet, consectetur
+					<!-- <p class="price__text">Lorem ipsum dolor sit amet, consectetur
 						adipiscing elit, sed do eiusmod tempor incididunt ut labore et
 						dolore magna aliqua. Lorem mollis aliquam ut porttitor leo a diam 
 						sollicitudin tempor. Placerat vestibulum lectus mauris ultrices eros
 						in cursus turpis massa.
-					</p>
+					</p> -->
 					<div class="price__cards">
 						<div class="price-card">
 							<div class="price-card__body">
@@ -129,17 +131,40 @@
 										<div class="type__image">
 											<picture><source srcset="img/slide1.webp" type="image/webp"><img src="img/slide1.jpg" alt=""></picture>
 										</div>
-										<p class="type__text">Диски</p>
+										<p class="type__text">Пескоструйная обработка </p>
 									</div>
 								</div>
 								<div class="price-card__included">
 									<div class="included">
-										<div class="included__amount">999<span>₽</span></div>
+										<div class="included__amount"><span>от</span> 850<span>₽ м2</span></div>
 										<ul class="included__list">
-											<li class="included__link">Наименнование услуги</li>
-											<li class="included__link">Наименнование услуги</li>
-											<li class="included__link">Наименнование услуги</li>
-											<li class="included__link">Наименнование услуги</li>
+											<li class="included__link">Пескоструйная обработка</li>
+											<li class="included__link">Очистка металла от старой краски</li>
+											<li class="included__link">Очистка металла от коррозии и других загрязнений.</li>
+											<li class="included__link">Детали любой сложности и размеров</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						<div class="price-card">
+							<div class="price-card__body">
+								<div class="price-card__type">
+									<div class="type">
+										<div class="type__image">
+											<picture><source srcset="img/slide1.webp" type="image/webp"><img src="img/slide1.jpg" alt=""></picture>
+										</div>
+										<p class="type__text">Порошковая покраска </p>
+									</div>
+								</div>
+								<div class="price-card__included">
+									<div class="included">
+										<div class="included__amount"><span>от</span> 500<span>₽ м2</span></div>
+										<ul class="included__list">
+											<li class="included__link">Порошковая покраска металлоконструкций</li>
+											<li class="included__link">Порошковая покраска деталей автомобилей</li>
+											<li class="included__link">Порошковая покраска мотоциклов и.т.д.</li>
 										</ul>
 										
 									</div>
@@ -154,67 +179,18 @@
 										<div class="type__image">
 											<picture><source srcset="img/slide1.webp" type="image/webp"><img src="img/slide1.jpg" alt=""></picture>
 										</div>
-										<p class="type__text">Кузова</p>
+										<p class="type__text">Порошковая покраска дисков </p>
 									</div>
 								</div>
 								<div class="price-card__included">
 									<div class="included">
-										<div class="included__amount">999<span>₽</span></div>
+										<div class="included__amount"><span>от</span> 1750<span>за шт</span></div>
 										<ul class="included__list">
-											<li class="included__link">Наименнование услуги</li>
-											<li class="included__link">Наименнование услуги</li>
-											<li class="included__link">Наименнование услуги</li>
-											<li class="included__link">Наименнование услуги</li>
-										</ul>
-										
-									</div>
-								</div>
-							</div>
-							
-						</div>
-						<div class="price-card">
-							<div class="price-card__body">
-								<div class="price-card__type">
-									<div class="type">
-										<div class="type__image">
-											<picture><source srcset="img/slide1.webp" type="image/webp"><img src="img/slide1.jpg" alt=""></picture>
-										</div>
-										<p class="type__text">Рамы</p>
-									</div>
-								</div>
-								<div class="price-card__included">
-									<div class="included">
-										<div class="included__amount">999<span>₽</span></div>
-										<ul class="included__list">
-											<li class="included__link">Наименнование услуги</li>
-											<li class="included__link">Наименнование услуги</li>
-											<li class="included__link">Наименнование услуги</li>
-											<li class="included__link">Наименнование услуги</li>
-										</ul>
-										
-									</div>
-								</div>
-							</div>
-							
-						</div>
-						<div class="price-card">
-							<div class="price-card__body">
-								<div class="price-card__type">
-									<div class="type">
-										<div class="type__image">
-											<picture><source srcset="img/slide1.webp" type="image/webp"><img src="img/slide1.jpg" alt=""></picture>
-										</div>
-										<p class="type__text">Другое</p>
-									</div>
-								</div>
-								<div class="price-card__included">
-									<div class="included">
-										<div class="included__amount">999<span>₽</span></div>
-										<ul class="included__list">
-											<li class="included__link">Наименнование услуги</li>
-											<li class="included__link">Наименнование услуги</li>
-											<li class="included__link">Наименнование услуги</li>
-											<li class="included__link">Наименнование услуги</li>
+											<li class="included__link">Подготовка к покраске</li>
+											<li class="included__link">Устранение царапин</li>
+											<li class="included__link">Бордюрки где не требуется сварка</li>
+											<li class="included__link">Нанесение порошкового цинко-грунта</li>
+											<li class="included__link">Порошковая покраска</li>
 										</ul>
 										
 									</div>
@@ -228,12 +204,13 @@
 			</div>
 			<div class="main__professionalism">
 				<div class="professionalism">
-					<h2 class="professionalism__title">Путь успеха — профессионализм</h2>
-					<div class="professionalism__text">На пути к успеху мы успешно 
+					<h2 class="professionalism__title">Путь к успеху — профессионализм</h2>
+					<div class="professionalism__text">На пути к успеху мы 
 						реализовали множество проектов, в которых наши услуги пескоструйной 
 						обработки и порошковой покраски превратили обычные металлические 
-						поверхности в произведения искусства. Вот несколько примеров наших 
-						работ до и после:
+						поверхности в произведения искусства. Мы решаем нестандартные задачи и стараемся всегда 
+						достигать желаемого результата. У нас индивидуальный подход к каждой задачи.
+						Примеры наших работ до и после:
 					</div>
 					<div class="professionalism__slide">
 						<div class="swiper slide-prof">
@@ -250,7 +227,7 @@
 										<h4 class="advantages__title">Результат работы</h4>
 										<p class="advantages__text">Металлические детали 
 											автомобиля были покрыты слоями ржавчины и выглядели 
-											старыми.Пескоструйная обработка эффективно 
+											старыми. Пескоструйная обработка эффективно 
 											устранила коррозию
 										</p>
 									</div>
@@ -332,7 +309,7 @@
 				<div class="footer__add add">
 					<p class="add__text">Присоединяйтесь:</p>
 					<a href="https://api.whatsapp.com/send/?phone=79105841910" target="_blank"><img class="add__img" src="img/whatsapp-svgrepo-com.svg" alt="Watsapp"></a>
-					<a href="tg://resolve?domain=" target="_blank"><img class="add__img" src="img/telegram-logo-svgrepo-com.svg" alt="Telegram"></a>
+					<a href="tg://resolve?domain=PROffICompleX" target="_blank"><img class="add__img" src="img/telegram-logo-svgrepo-com.svg" alt="Telegram"></a>
 					
 				</div>
 			</header>
@@ -348,7 +325,7 @@
 						<h4 class="content__title">Контакты</h4>
 						<ul class="content__contacts-list">
 							<li><strong>Позвоните:</strong><a class="content__contacts-link" href="tel:+79105841910">+7 910 584 19 10</a></li>
-							<li><strong>Напишите:</strong><a class="content__contacts-link" href="https://api.whatsapp.com/send/?phone=79105841910" target="_blank"> +7 910 584 19 10</a></li>
+							<li><strong>Позвоните:</strong><a class="content__contacts-link" href="tel:+79684362553">+7 968 436 25 53</a></li>
 							<li><strong>Приезжайте:</strong><a class="content__contacts-link" href="#"> Тула, Венёвский район, п. <strong>Рассвет</strong></a></li>
 						</ul>
 						
@@ -372,9 +349,9 @@
 	</div>
 </footer>
 	</div>
-	<script src="https://api-maps.yandex.ru/2.1/?apikey=a9666cab-0649-4793-b758-8dd31915f474&lang=ru_RU&_v=20240204071445" >
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=a9666cab-0649-4793-b758-8dd31915f474&lang=ru_RU&_v=20240209203443" >
 	</script>
-	<script src="js/app.min.js?_v=20240204071445"></script>
+	<script src="js/app.min.js?_v=20240209203443"></script>
 </body>
 
 </html>

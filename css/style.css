@@ -1133,7 +1133,7 @@ body {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
-  color: #69778A;
+  color: #69778a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1177,7 +1177,7 @@ body {
 }
 
 .top__location strong {
-  color: #69778A;
+  color: #69778a;
   font-weight: 400;
   -webkit-transform: translate(-26px, 0);
       -ms-transform: translate(-26px, 0);
@@ -1205,7 +1205,7 @@ body {
 }
 
 .top__tel strong {
-  color: #69778A;
+  color: #69778a;
   font-weight: 400;
   -webkit-transform: translate(-26px, 0);
       -ms-transform: translate(-26px, 0);
@@ -1217,7 +1217,7 @@ body {
   z-index: 10;
   padding: 0px 15px;
   opacity: 0.9;
-  background: #07192D;
+  background: #07192d;
   color: #fff;
   font-weight: 400;
   -webkit-transition: 0.3s;
@@ -1240,7 +1240,7 @@ body {
   -ms-grid-columns: 1fr minmax(auto, 740px) 1fr;
       grid-template: auto/1fr minmax(auto, 740px) 1fr;
   z-index: 1000;
-  background: #07192D;
+  background: #07192d;
 }
 
 .menu__list {
@@ -1255,7 +1255,7 @@ body {
 }
 
 .menu__list li {
-  border-left: 1px solid #69778A;
+  border-left: 1px solid #69778a;
   text-align: center;
   padding: 13px 0px;
   -webkit-transition: 0.3s;
@@ -1268,7 +1268,7 @@ body {
 }
 
 .menu__list:last-child {
-  border-right: 1px solid #69778A;
+  border-right: 1px solid #69778a;
 }
 
 .header {
@@ -1302,6 +1302,8 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .header__title {
@@ -1409,6 +1411,7 @@ body {
   left: 0;
   width: 100%;
   height: calc(100% - 100px);
+  background: #061321;
 }
 
 .main__my-slide {
@@ -1455,7 +1458,7 @@ body {
 .about__title {
   text-align: center;
   font-size: 50px;
-  color: #FFF;
+  color: #fff;
   margin-bottom: 50px;
   font-weight: 700;
 }
@@ -1469,7 +1472,7 @@ body {
 
 .card {
   border-radius: 10px;
-  background: #FFF;
+  background: #fff;
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.07);
           box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.07);
 }
@@ -1512,19 +1515,19 @@ body {
   font-weight: 700;
 }
 
-.price__text {
-  font-weight: 300;
-  line-height: 150%;
-  max-width: 812px;
-  margin: 0 auto;
-  margin-bottom: 37px;
-}
-
 .price__cards {
   display: -ms-grid;
   display: grid;
-  grid-template: auto/repeat(auto-fit, minmax(250px, 1fr));
+  grid-template: auto/repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
+}
+
+.price-card__body {
+  height: 100%;
+}
+
+.price-card__included {
+  height: calc(100% - 281px);
 }
 
 .type {
@@ -1537,8 +1540,8 @@ body {
 
 .type:hover {
   border-radius: 6px;
-  -webkit-box-shadow: 0px 0px 10px 0px #EAEAEA;
-          box-shadow: 0px 0px 10px 0px #EAEAEA;
+  -webkit-box-shadow: 0px 0px 10px 0px #eaeaea;
+          box-shadow: 0px 0px 10px 0px #eaeaea;
 }
 
 .type__image {
@@ -1558,9 +1561,10 @@ body {
 
 .included {
   border-radius: 6px;
-  -webkit-box-shadow: 0px 0px 10px 0px #EAEAEA;
-          box-shadow: 0px 0px 10px 0px #EAEAEA;
+  -webkit-box-shadow: 0px 0px 10px 0px #eaeaea;
+          box-shadow: 0px 0px 10px 0px #eaeaea;
   padding: 40px;
+  height: 100%;
 }
 
 .included__amount {
@@ -1572,10 +1576,15 @@ body {
   font-size: 28px;
 }
 
+.included__list {
+  text-align: left;
+}
+
 .included__link {
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
+  padding-left: 25px;
   background: url("../img/jackdaw.svg") 0 40% no-repeat;
 }
 
@@ -1599,7 +1608,7 @@ body {
   max-width: 1230px;
   margin: 0 auto;
   text-align: center;
-  color: #FFF;
+  color: #fff;
 }
 
 .professionalism__title {
@@ -1660,7 +1669,7 @@ body {
 .advantages__body {
   padding: 15px;
   height: 100%;
-  background: #FFF;
+  background: #fff;
   color: #061321;
   border-radius: 0px 10px 10px 0px;
 }
@@ -1691,9 +1700,6 @@ body {
   overflow: hidden;
 }
 
-.no-webp .footer{
-  background: url("../img/bg-footer.png") 0 0/cover no-repeat; }
-
 .footer {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
@@ -1701,6 +1707,7 @@ body {
   position: relative;
   display: -ms-grid;
   display: grid;
+  background: #061321;
 }
 
 .footer__contents {
@@ -1715,7 +1722,7 @@ body {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
-  color: #FFF;
+  color: #fff;
   font-weight: 500;
   padding: 30px 15px;
 }
@@ -1739,7 +1746,7 @@ body {
   width: 100%;
   display: block;
   height: 1px;
-  background: #69778A;
+  background: #69778a;
 }
 
 .footer__logo {
@@ -1831,7 +1838,7 @@ body {
 }
 
 .buttom {
-  color: #FFF;
+  color: #fff;
   opacity: 0.8;
   background: #000;
   display: -ms-grid;
@@ -2038,12 +2045,19 @@ body {
     font-size: 40px;
   }
 
-  .price__text {
-    margin-bottom: 30px;
+  .price__cards {
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+    row-gap: 45px;
   }
 
-  .price__cards {
-    gap: 20px;
+  .price-card__included {
+    height: calc(100% - 261px);
+  }
+
+  .price-card__included {
+    height: calc(100% - 246px);
   }
 
   .type:hover {
@@ -2054,8 +2068,8 @@ body {
 
   .type {
     border-radius: 6px;
-    -webkit-box-shadow: 0px 0px 10px 0px #EAEAEA;
-            box-shadow: 0px 0px 10px 0px #EAEAEA;
+    -webkit-box-shadow: 0px 0px 10px 0px #eaeaea;
+            box-shadow: 0px 0px 10px 0px #eaeaea;
     margin-bottom: 30px;
   }
 
@@ -2161,11 +2175,6 @@ body {
 
   .main__bg {
     padding-bottom: 30px;
-    background: #061321;
-  }
-
-  .main__bg-img {
-    display: none;
   }
 
   .swiper {
@@ -2175,6 +2184,10 @@ body {
   .about__title {
     margin-bottom: 30px;
     font-size: 40px;
+  }
+
+  .included__amount {
+    margin-bottom: 20px;
   }
 
   .slide-prof__card {
@@ -2268,16 +2281,17 @@ body {
     margin-bottom: 20px;
   }
 
-  .price__text {
-    font-size: 14px;
-  }
-
   .price__cards {
-    gap: 15px;
+    row-gap: 25px;
+    grid-template: auto/repeat(auto-fit, minmax(280px, 1fr));
   }
 
   .type {
     margin-bottom: 15px;
+  }
+
+  .included {
+    padding: 20px;
   }
 
   .professionalism {
@@ -2387,5 +2401,3 @@ body {
 }
 
 .webp .main__professionalism{ background: url(../img/profi-banner.webp) 0 0 no-repeat; }
-
-.webp .footer{ background: url(../img/bg-footer.webp) 0 0/cover no-repeat; }
