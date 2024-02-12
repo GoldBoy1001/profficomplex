@@ -260,6 +260,9 @@
     font-weight: 800;
     line-height: 114%; /* 91.2px */
     text-transform: uppercase;
+    transform: translate(-120%, 0px);
+    opacity: 0;
+    transition: 0.3s;
     @media (max-width: 992px) {
       grid-row: 1/2;
     }
@@ -286,6 +289,10 @@
         font-size: 20px;
       }
     }
+  }
+  &__title._anim {
+    transform: translate(0px, 0px);
+    opacity: 1;
   }
 }
 
