@@ -49,7 +49,7 @@ new Swiper(".slide-prof", {
     prevEl: ".swiper-button-prev",
   },
   pagination: {
-    el: ".swiper-pagination-prof",
+    el: ".swiper-pagination",
     dynamicBullets: true,
   },
 });
