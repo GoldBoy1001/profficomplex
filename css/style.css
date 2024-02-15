@@ -1450,6 +1450,10 @@ body {
   border-radius: 10px;
 }
 
+.swiper-slide {
+  padding-bottom: 50px;
+}
+
 .my-slide-slide {
   overflow: hidden;
 }
@@ -1685,10 +1689,8 @@ body {
   min-width: 0;
 }
 
-.no-webp .main__professionalism{
-  background: url("../img/profi-banner.png") 0 0 no-repeat; }
-
 .main__professionalism {
+  background: #061321;
   min-width: 0;
 }
 
@@ -1721,6 +1723,7 @@ body {
 
 .slide-prof {
   min-width: 0;
+  padding-bottom: 0px;
 }
 
 .slide-prof__card {
@@ -2121,11 +2124,6 @@ body {
     padding: 30px 15px;
   }
 
-  .swiper-button-next,
-  .swiper-button-prev {
-    display: none;
-  }
-
   .price {
     padding: 30px 15px;
   }
@@ -2480,6 +2478,16 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+
+  .footer__logo {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 370px) {
+  .add__img {
+    width: 25px;
+  }
 }
 
 @media (max-width: 340px) {
@@ -2487,6 +2495,10 @@ body {
     max-width: 220px;
     margin: 0 auto 15px auto;
   }
-}
 
-.webp .main__professionalism{ background: url(../img/profi-banner.webp) 0 0 no-repeat; }
+  .add {
+    -webkit-column-gap: 12px;
+       -moz-column-gap: 12px;
+            column-gap: 12px;
+  }
+}
