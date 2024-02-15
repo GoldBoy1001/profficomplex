@@ -36,6 +36,10 @@ new Swiper(".my-slide", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+  },
 });
 new Swiper(".slide-prof", {
   slidesPerView: 1,
@@ -96,7 +100,7 @@ function init() {
   // myMap.controls.remove('fullscreenControl');
   // myMap.controls.remove('zoomControl');
   // myMap.controls.remove('rulerControl');
-  myMap.behaviors.disable(["scrollZoom"]);
+  // myMap.behaviors.disable(["scrollZoom"]);
 
   myMap.geoObjects.add(placemark);
 }

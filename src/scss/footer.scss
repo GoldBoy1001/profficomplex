@@ -60,6 +60,9 @@
     @media (max-width: 480px) {
       font-size: 24px;
     }
+    @media (max-width: 380px) {
+      font-size: 22px;
+    }
   }
 
   // .footer__add
@@ -81,6 +84,9 @@
   @media (max-width: 680px) {
     column-gap: 15px;
   }
+  @media (max-width: 340px) {
+    column-gap: 12px;
+  }
   &__text {
     font-weight: 500;
     @media (max-width: 580px) {
@@ -93,6 +99,9 @@
   &__img {
     width: 30px;
     cursor: pointer;
+    @media (max-width: 370px) {
+      width: 25px;
+    }
   }
 }
 .content {

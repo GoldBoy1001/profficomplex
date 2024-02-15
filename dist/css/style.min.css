@@ -1373,10 +1373,13 @@ body {
   transform: scale(1);
 }
 
+.swiper-pagination {
+  display: none;
+}
 @media (max-width: 768px) {
-  .swiper-button-next,
-  .swiper-button-prev {
-    display: none;
+  .swiper-pagination {
+    display: block;
+    top: 100%;
   }
 }
 
@@ -1652,7 +1655,7 @@ body {
   min-width: 0;
 }
 .main__professionalism {
-  background: url("../img/profi-banner.png") 0 0 no-repeat;
+  background: #061321;
   min-width: 0;
 }
 
@@ -1904,6 +1907,11 @@ body {
     font-size: 24px;
   }
 }
+@media (max-width: 380px) {
+  .footer__logo {
+    font-size: 22px;
+  }
+}
 .add {
   display: flex;
   justify-content: center;
@@ -1913,6 +1921,11 @@ body {
 @media (max-width: 680px) {
   .add {
     column-gap: 15px;
+  }
+}
+@media (max-width: 340px) {
+  .add {
+    column-gap: 12px;
   }
 }
 .add__text {
@@ -1926,6 +1939,11 @@ body {
 .add__img {
   width: 30px;
   cursor: pointer;
+}
+@media (max-width: 370px) {
+  .add__img {
+    width: 25px;
+  }
 }
 
 .content {
