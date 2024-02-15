@@ -48,6 +48,10 @@ new Swiper(".slide-prof", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  pagination: {
+    el: ".swiper-pagination-prof",
+    dynamicBullets: true,
+  },
 });
 
 // ===================== Map ====================

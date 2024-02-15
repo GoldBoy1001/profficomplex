@@ -1357,6 +1357,10 @@ body {
   }
 }
 
+.swiper-slide {
+  padding-bottom: 50px;
+}
+
 .my-slide-slide {
   overflow: hidden;
 }
@@ -1371,16 +1375,6 @@ body {
 }
 .my-slide-slide ._anim-items._anim {
   transform: scale(1);
-}
-
-.swiper-pagination {
-  display: none;
-}
-@media (max-width: 768px) {
-  .swiper-pagination {
-    display: block;
-    top: 100%;
-  }
 }
 
 .about {
@@ -1716,6 +1710,7 @@ body {
 
 .slide-prof {
   min-width: 0;
+  padding-bottom: 0px;
 }
 .slide-prof__card {
   display: grid;
