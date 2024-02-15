@@ -1212,6 +1212,46 @@ body {
           transform: translate(-26px, 0);
 }
 
+@-webkit-keyframes moveUpDown {
+  0% {
+    -webkit-transform: translateY(0) rotateX(0deg) scale(1);
+            transform: translateY(0) rotateX(0deg) scale(1);
+    /* начальное положение без поворота */
+  }
+
+  50% {
+    -webkit-transform: translateY(-5px) rotateX(20deg) scale(1.3);
+            transform: translateY(-5px) rotateX(20deg) scale(1.3);
+    /* перемещение вверх с небольшим наклоном */
+  }
+
+  100% {
+    -webkit-transform: translateY(0) rotateX(0deg) scale(1);
+            transform: translateY(0) rotateX(0deg) scale(1);
+    /* возвращение в исходное положение без поворота */
+  }
+}
+
+@keyframes moveUpDown {
+  0% {
+    -webkit-transform: translateY(0) rotateX(0deg) scale(1);
+            transform: translateY(0) rotateX(0deg) scale(1);
+    /* начальное положение без поворота */
+  }
+
+  50% {
+    -webkit-transform: translateY(-5px) rotateX(20deg) scale(1.3);
+            transform: translateY(-5px) rotateX(20deg) scale(1.3);
+    /* перемещение вверх с небольшим наклоном */
+  }
+
+  100% {
+    -webkit-transform: translateY(0) rotateX(0deg) scale(1);
+            transform: translateY(0) rotateX(0deg) scale(1);
+    /* возвращение в исходное положение без поворота */
+  }
+}
+
 .menu {
   position: relative;
   z-index: 10;
@@ -1446,12 +1486,20 @@ body {
 }
 
 .my-slide {
-  height: 270px;
+  height: 320px;
   border-radius: 10px;
+  padding-bottom: 50px;
 }
 
-.swiper-slide {
-  padding-bottom: 50px;
+.my-slide .swiper-pagination {
+  display: none;
+}
+
+.my-slide .swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  text-align: center;
 }
 
 .my-slide-slide {
@@ -1723,7 +1771,17 @@ body {
 
 .slide-prof {
   min-width: 0;
-  padding-bottom: 0px;
+}
+
+.slide-prof .swiper-pagination {
+  display: none;
+}
+
+.slide-prof .swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  text-align: center;
 }
 
 .slide-prof__card {
@@ -2246,6 +2304,8 @@ body {
     width: 30px;
     height: 30px;
     background: url("../img/tel.svg") 0 0/28px no-repeat;
+    -webkit-animation: moveUpDown 2s infinite;
+            animation: moveUpDown 2s infinite;
   }
 
   .top__tel strong {
@@ -2268,6 +2328,15 @@ body {
     margin-bottom: 15px;
   }
 
+  .my-slide .swiper-pagination {
+    display: block;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+
   .about__title {
     margin-bottom: 30px;
     font-size: 40px;
@@ -2275,6 +2344,14 @@ body {
 
   .included__amount {
     margin-bottom: 20px;
+  }
+
+  .slide-prof {
+    padding-bottom: 50px;
+  }
+
+  .slide-prof .swiper-pagination {
+    display: block;
   }
 
   .slide-prof__card {
@@ -2443,10 +2520,14 @@ body {
 }
 
 @media (max-width: 440px) {
+  .no-webp .top__tel{
+    background: url("../img/phone_7135.png") 0 0/35px no-repeat; }
   .top__tel {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+    width: 35px;
+    height: 35px;
   }
 }
 
@@ -2458,7 +2539,7 @@ body {
 
 @media (max-width: 380px) {
   .my-slide {
-    height: 220px;
+    height: 270px;
   }
 
   .card__body {
@@ -2501,4 +2582,9 @@ body {
        -moz-column-gap: 12px;
             column-gap: 12px;
   }
+}
+
+@media (max-width: 440px){
+
+  .webp .top__tel{ background: url(../img/phone_7135.webp) 0 0/35px no-repeat; }
 }
