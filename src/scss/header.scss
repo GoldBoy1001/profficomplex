@@ -292,6 +292,17 @@
     @media (max-width: 480px) {
       font-size: 26px;
     }
+    .no-sl {
+      @media (max-width: 371px) {
+        display: none;
+      }
+    }
+    .yes-sl {
+      display: none;
+      @media (max-width: 371px) {
+        display: inline;
+      }
+    }
     strong {
       font-size: 38px;
       font-weight: 400;

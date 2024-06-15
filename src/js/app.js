@@ -53,6 +53,40 @@ new Swiper(".slide-prof", {
     dynamicBullets: true,
   },
 });
+new Swiper(".swiper-price", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    // когда ширина экрана меньше 768 пикселей
+    440: {
+      slidesPerView: 1.2,
+      spaceBetween: 20,
+    },
+    // когда ширина экрана меньше 768 пикселей
+    560: {
+      slidesPerView: 1.5,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2.4,
+      spaceBetween: 20,
+    },
+    // когда ширина экрана меньше 1024 пикселей
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    // и так далее
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+  },
+});
 
 // ===================== Map ====================
 ymaps.ready(init);
