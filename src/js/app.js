@@ -54,6 +54,7 @@ new Swiper(".slide-prof", {
   },
 });
 new Swiper(".swiper-price", {
+  loop: true,
   slidesPerView: 3,
   spaceBetween: 30,
   breakpoints: {
